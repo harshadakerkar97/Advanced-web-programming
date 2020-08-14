@@ -1,0 +1,145 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #005E54;
+    background: linear-gradient(to bottom, #005E54 20%, #D9DBD6 20%);
+}
+
+.box {
+    height: 90vh;
+    width: 85vw;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12), 0 10px 5px rgba(0,0,0,0.24);
+    /* justify-content: center; */
+    background:url('wpback.PNG');
+    background-position: right;
+
+}
+
+.left {
+    background-color: #FEFEFE;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.scrollb {
+    width: 100%;
+    height: 60vh;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+.scrollb1 {
+    width: 100%;
+    height: 60vh;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+.right {
+    background:url('wpback.PNG');
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: 60vh;
+}
+
+.chat{
+    border-bottom: 1px solid rgb(223, 212, 212);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.chat:hover{
+    background-color: gainsboro;
+}
+.fa-link:hover{
+    color: blue;
+}
+
+.tooltiptxt {
+    visibility: hidden;
+    width: 100px;
+    background-color: gainsboro;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptxt {
+    visibility: visible;
+  }
+input[type=text]{
+    height:35px;
+    width:20vw;
+    background: transparent;
+    border: none;
+    padding-left: 45px;
+    font-size: 15px;
+}
+button[type=submit]{
+    height: 41px;
+    width:2.2vw;
+    background: transparent;
+    border: none;
+    color: darkgrey;
+    padding-left: 15px;
+}
+
+button[type=submit]:hover{
+    border:none;
+    border-bottom: 1px solid darkgrey;
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+input[type=text]:hover{
+    border:none;
+    /* border-bottom: 1px solid darkgrey; */
+}
+ 
+.textp{
+    background:url('wallp.png');
+    display: flex;
+    flex-direction: column;
+}
+.tbox{
+    background-color: whitesmoke;
+    height:100%;
+    margin: 2px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: none;
+    box-shadow: whitesmoke;
+}
+
+#mymsg{
+    display: flex;
+    flex-direction:column ;
+    margin: 5px;
+    margin-bottom : 5px;
+
+}
+
+

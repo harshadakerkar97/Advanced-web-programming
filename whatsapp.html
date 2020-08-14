@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="wp.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <!-- -------------------------Left -------------------------------------------------->
+            <div class="left">
+                <!-- -----------------------top left -------------------------------------->
+                <div class="chat" style="flex:1;height: 70%; padding-left: 15px;">
+                    <div style="flex:5 ">
+                        <img src="pic1.JPG" alt=""
+                            style=" height:40px; width:50px; border-radius: 50px; object-fit: cover;">
+                    </div>
+                    <div style="flex:0.8; display: flex;align-items: center;justify-content: space-around;">
+                        <a><img src="status.PNG" alt="" style="height: 50px; border-radius: 50px;"></a>
+                    </div>
+                    <div style="flex:0.8;display: flex;align-items: center;justify-content: space-around;">
+                        <span class="tooltip">
+                            <span class="tooltiptxt"> Message</span>
+                            <img src="https://img.icons8.com/material/24/000000/speaker-notes.png" />
+                        </span>
+                    </div>
+                    <div style="flex: 0.8;display: flex;align-items: flex-start;justify-content: space-around;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-------------------------notification left--------------------------------------->
+                <div class="chat" style="background-color: #9DE1FF;flex:1.5;">
+                    <div style="flex: 1;display: flex; align-items: center; justify-content: center; ">
+                        <img src="bell.png" alt="" style="border-radius: 100%; height:50px; margin: 5px;">
+                    </div>
+                    <div style="flex: 3; font-size: 18px;line-height: 20px;">
+                        Get Notified of New Messages <br>
+                        <a href="#" style="color: black;">Turn on desktop notifications</a>
+                    </div>
+                </div>
+                <!-------------------------search left--------------------------------------->
+                <div class="chat" id="searchB1" style="flex: 0.8; background-color: #FBFBFB;">
+                    <div id="searchB1"
+                        style="display: flex; justify-content: space-evenly;padding-left: 3px;background-color: white;">
+                        <div>
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div>
+                            <input type="text" id="searchbox" placeholder="Search or start new chat" name="search">
+                        </div>
+
+                    </div>
+                </div>
+                <!-------------------------chat left--------------------------------------->
+                <div class="scrollb">
+                    <div class="chat" onclick="letschat(this);">
+                        <div>
+                            <img src="unp.png" alt=""
+                                style=" height:50px; width:50px; border-radius: 100%; padding: 5px; object-fit: cover;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width:80%;">
+                            <div style="flex: 1; padding-left :5px; ">
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <b>Pooja Jadhav</b>
+                                    <p style="font-size: 12px; color: dimgray;">yesterday</p>
+                                </div>
+                            </div>
+                            <div style="flex: 1; padding-left:5px;color:lightslategray">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                Hello how are you???</div>
+                        </div>
+                    </div>
+
+                    <div class="chat" onclick="letschat(this);">
+                        <div>
+                            <img src=" unp.png" alt=""
+                                style=" height:50px; width:50px; border-radius: 100%; padding: 5px; object-fit: cover;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width:80%;">
+                            <div style="flex: 1; padding-left :5px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <b>Rupali Pangre</b>
+                                    <p style="font-size: 12px; color: dimgray;">yesterday</p>
+                                </div>
+                            </div>
+                            <div style="flex: 1; padding-left:5px;color:lightslategray">Hello how are
+                                you???</div>
+                        </div>
+                    </div>
+
+                    <div class="chat" onclick="letschat(this);">
+                        <div>
+                            <img src="unp.png" alt=""
+                                style=" height:50px; width:50px; border-radius: 100%; padding: 5px; object-fit: cover;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width:80%;">
+                            <div style="flex: 1; padding-left :5px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <b>Monika patil</b>
+                                    <p style="font-size: 12px; color: dimgray;">yesterday</p>
+                                </div>
+                            </div>
+                            <div style="flex: 1; padding-left:5px;color:lightslategray">Hello how are
+                                you???</div>
+                        </div>
+                    </div>
+
+
+                    <div class="chat" onclick="letschat(this);">
+                        <div>
+                            <img src="unp.png" alt=""
+                                style=" height:50px; width:50px; border-radius: 100%; padding: 5px; object-fit: cover;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width:80%;">
+                            <div style="flex: 1; padding-left :5px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <b>shraddha shirbhate</b>
+                                    <p style="font-size: 12px; color: dimgray;">yesterday</p>
+                                </div>
+                            </div>
+                            <div style="flex: 1; padding-left:5px;color:lightslategray">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                Hello how are you???</div>
+                        </div>
+                    </div>
+
+                    <div class="chat" onclick="letschat(this);">
+                        <div>
+                            <img src="unp.png" alt=""
+                                style=" height:50px; width:50px; border-radius: 100%; padding: 5px; object-fit: cover;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width:80%;">
+                            <div style="flex: 1; padding-left :5px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <b>kanchan</b>
+                                    <p style="font-size: 12px; color: dimgray;">yesterday</p>
+                                </div>
+                            </div>
+                            <div style="flex: 1; padding-left:5px;color:lightslategray">Hello how are
+                                you???</div>
+                        </div>
+                    </div>
+                    <div class="chat" onclick="letschat(this);">
+                        <div>
+                            <img src="unp.png" alt=""
+                                style=" height:50px; width:50px; border-radius: 100%; padding: 5px; object-fit: cover;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width:80%;">
+                            <div style="flex: 1; padding-left :5px; ">
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <b>supriya</b>
+                                    <p style="font-size: 12px; color: dimgray;">yesterday</p>
+                                </div>
+                            </div>
+                            <div style="flex: 1; padding-left:5px;color:lightslategray">Hello how are
+                                you???</div>
+                        </div>
+                    </div>
+                    <div class="chat" onclick="letschat(this);">
+                        <div>
+                            <img src="unp.png" alt=""
+                                style=" height:50px; width:50px; border-radius: 100%; padding: 5px; object-fit: cover;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width:80%;">
+                            <div style="flex: 1; padding-left :5px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <b>Cdac official</b>
+                                    <p style="font-size: 12px; color: dimgray;">yesterday</p>
+                                </div>
+                            </div>
+                            <div style="flex: 1; padding-left:5px;color:lightslategray">Hello how are
+                                you???</div>
+                        </div>
+                    </div>
+                    <div class="chat" onclick="letschat(this);">
+                        <div>
+                            <img src="unp.png" alt=""
+                                style=" height:50px; width:50px; border-radius: 100%; padding: 5px; object-fit: cover;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width:80%;">
+                            <div style="flex: 1; padding-left :5px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <b>pranati</b>
+                                    <p style="font-size: 12px; color: dimgray;">yesterday</p>
+                                </div>
+                            </div>
+                            <div style="flex: 1; padding-left:5px;color:lightslategray">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                Hello how are you???
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------Right---------------------------------- -->
+            <div class="right" id="rpart" style="visibility: hidden;">
+                <!-- ------------------------top Part----------------------------------------->
+                <div class="chat" style="flex:1;height: 70%; padding-left: 15px; background-color: #EDEFEE;">
+                    <div style="flex:1">
+                        <img src="unp.png" alt=""
+                            style=" height:40px; width:50px; border-radius: 100%; object-fit: cover;">
+                    </div>
+                    <div style="flex: 8; display: flex; flex-direction: column;">
+                        <div style="flex: 1;">Pooja Jadhav
+                        </div>
+                        <div style="flex:1; color: dimgray; ">online</div>
+                    </div>
+                    <div style="flex:0.8; display: flex;align-items: center;justify-content: space-around;">
+                        <i class="fa fa-search " aria-hidden="true"></i>
+                    </div>
+                    <div style="flex:0.8; display: flex;align-items:center;justify-content: center;">
+                        <img src="https://img.icons8.com/ios/25/000000/attach.png" />
+                    </div>
+                    <div style="flex: 0.8;display: flex;align-items: flex-start;justify-content: space-around;">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!------------------------------- ChatPart----------------------------------------- -->
+                <div style="flex:8" class="textp">
+                    <div class="scrollb1" style="height: 75vh;">
+                        <div id="mymsg">
+                            <!-- style="display: flex; justify-content: flex-end; flex-direction: column;"> -->
+                            <!-- <div id="msgval" style="float:right; height:30px">
+
+                            </div> -->
+
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <!-------------------------input right--------------------------------------->
+                <div
+                    style="flex:0.9;background-color: #F0F0F0; display:flex; flex-direction: row; align-items: center; justify-content: center;">
+
+                    <div style="flex:10; border-radius:50px; padding-left: 15px; ">
+                        <i class="fa fa-smile-o" aria-hidden="true"></i>
+                        <input type="text" value="" id="inp1" placeholder="Type a message" style="width: 80%;
+                            " onkeypress="addmsg(event);">
+                    </div>
+                    <div style="flex:0.8;">
+                        <img src="mike.png" alt="" style="height:12px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
